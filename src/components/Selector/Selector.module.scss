@@ -1,0 +1,57 @@
+@import "../../color.scss";
+
+.root {
+  position: relative;
+  font-size: 16px;
+  max-width: 370px;
+  margin: 32px auto 16px;
+  @media (max-width: 837px) {
+    max-width: 329px;
+  }
+  .select {
+    width: 100%;
+    border: 1px solid $selectorColor;
+    background-color: $white;
+    color: $cardGr;
+    width: 100%;
+    height: 48px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    &:focus {
+      border-color: $selectorColor;
+      box-shadow: inset 0 1px 1px $selectorColor, 0 0 0 3px $selectorColor;
+      border-radius: 5px;
+    }
+    &:hover {
+      cursor: default;
+    }
+    img {
+      position: absolute;
+      right: 16px;
+    }
+    p {
+      margin: 0 16px;
+    }
+  }
+  ul {
+    width: 100%;
+    position: absolute;
+    border: 1px solid $ulBorder;
+    border-radius: 4px;
+    background-color: $white;
+    z-index: 5;
+
+    li {
+      list-style: none;
+      padding: 16px;
+      color: $cardGr;
+      z-index: 5;
+      &:hover {
+        cursor: default;
+        background-color: $white;
+      }
+    }
+    transition: all 0.3s;
+  }
+}

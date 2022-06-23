@@ -1,0 +1,47 @@
+@import "../../color.scss";
+
+.root {
+  background-color: $contBackgrColor;
+  padding: 0 125.5px;
+  border: 1px solid $contBorderColor;
+  @media (max-width: 1040px) {
+    padding: 0 23px;
+  }
+  .groupNav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: $cardGr;
+    width: 567px;
+    height: 17px;
+    margin: 84px auto 75px;
+    .active {
+      color: $groupNavActive;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .button {
+    margin: 80px auto 184px;
+    border-radius: 5px;
+    width: 170px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $cardGr;
+    background-color: $white;
+    -webkit-box-shadow: 0px 7px 14px -2px $contButtonShadow;
+    -moz-box-shadow: 0px 7px 14px -2px $contButtonShadow;
+    box-shadow: 0px 7px 14px -2px $contButtonShadow;
+    &:hover {
+      cursor: pointer;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 900;
+      user-select: none;
+    }
+  }
+}

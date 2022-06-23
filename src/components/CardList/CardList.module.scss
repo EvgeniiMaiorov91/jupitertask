@@ -1,0 +1,22 @@
+.root {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(370px, 370px));
+  gap: 32px 30px;
+  @media (max-width: 1840px) {
+    grid-template-columns: repeat(3, minmax(370px, 370px));
+    column-gap: calc((100% - 1110px) / 2);
+  }
+  @media (max-width: 1440px) {
+    grid-template-columns: repeat(2, minmax(370px, 370px));
+    column-gap: calc(100% - 740px);
+  }
+  @media (max-width: 1040px) {
+    grid-template-columns: repeat(1, minmax(370px, 370px));
+    //  justify-items: center;
+    justify-content: center;
+  }
+  @media (max-width: 835px) {
+    grid-template-columns: repeat(1, minmax(329px, 329px));
+  }
+}
