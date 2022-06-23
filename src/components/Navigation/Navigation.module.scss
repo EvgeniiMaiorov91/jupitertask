@@ -1,0 +1,61 @@
+@import "../../color.scss";
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .littleImg {
+      position: absolute;
+      left: 14px;
+      top: 14px;
+    }
+    p {
+      font-size: 24px;
+      font-weight: bold;
+      margin-left: 15px;
+    }
+  }
+  .navigator {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 0.46;
+    margin: 0 auto;
+    max-width: 520px;
+    & p:hover {
+      cursor: pointer;
+      color: $navigatorColor;
+    }
+  }
+  .button {
+    width: 138px;
+    height: 48px;
+    border: 1px solid $navigatorColor;
+    color: $navigatorColor;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & p {
+      font-size: 14px;
+      font-weight: 900;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: $white;
+      opacity: 0.2;
+    }
+  }
+}
+@media (max-width: 1040px) {
+  .root {
+    justify-content: center;
+    .navigator,
+    .button {
+      display: none;
+    }
+  }
+}

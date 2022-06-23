@@ -1,0 +1,29 @@
+@import "../../color.scss";
+
+.root {
+  background-color: $headerBackgr;
+  height: 400px;
+  padding: 16px 126.5px 0;
+  text-align: center;
+  .title {
+    margin: 103px 0 35px;
+    font-size: 72px;
+    font-weight: 800;
+    letter-spacing: -0.028em;
+  }
+  .description {
+    line-height: 2em;
+    max-width: 570px;
+    height: 66px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1040px) {
+  .root {
+    padding: 16px 23px 0;
+    .title {
+      font-size: 56px;
+    }
+  }
+}
